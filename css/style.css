@@ -1,0 +1,96 @@
+@import url(./cabecalho.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../img/plano\ de\ fundo\ restaurante.jpg);
+    background-color: rgba(0,0,0,0.85); /* define uma cor preta com 50% de opacidade */
+    background-blend-mode: multiply; /* mistura a cor com a imagem */
+    background-position: center center;
+    background-size: cover;
+    background-position-x: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main img{
+    width: 300px;
+    height: 300px;
+    margin: 100px 0px 20px 0;
+    border-radius: 50%;
+}
+
+.titulo{
+    font-size: 40px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+p{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 280px;
+    height: 80px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    position: relative;
+    transition: 1.5s;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-size: 15px;
+}
+
+button:hover{
+    color:rgb(225, 180, 2);
+}
+
+button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgb(154, 6, 154);
+    z-index: -1;
+    transition: 1s;
+}
+
+button:hover:before {
+    width: 100%;
+    height: 100%;
+}
